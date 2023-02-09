@@ -56,18 +56,33 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'dark',
+      },
+      docs: {
+        sidebar: {
+          hideable: true,
+        },
+      },
       navbar: {
-        title: 'My Site',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          href: '/',
+          alt: 'Odin Docs',
+          src: '/logo/odin-logo-black.png',
+          srcDark: '/logo/odin-logo-white.png',
         },
         items: [
           {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Getting Started',
+          },
+          {
+            type: 'doc',
+            docId: 'develop',
+            position: 'left',
+            label: 'Develop',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -84,7 +99,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Getting Started',
                 to: '/docs/intro',
               },
             ],
