@@ -20,22 +20,21 @@ const sidebars = {
   
   tutorialSidebar: [
     'overview/intro',
-    'overview/whitepaper/whitepaper',
     {
       type: 'category',
       label: 'Data Sources',
-      items: ['overview/data-sources/data-sources'],
+      items: ['overview/data-sources/intro'],
     },
     {
       type: 'category',
       label: 'Data Scripts',
-      items: ['overview/data-scripts/data-scripts'],
+      items: ['overview/data-scripts/intro'],
     },
-    {
+    {/*
       type: 'category',
       label: 'Odin ID',
       items: ['overview/odin-id/intro'],
-    },
+  */},
     {
       type: 'category',
       label: 'Assets',
@@ -52,7 +51,7 @@ const sidebars = {
         'overview/use-cases/wallace',
       ],
     },
-    'overview/ai-tools/intro',
+    {/*'overview/ai-tools/intro'^*/},
   ],
   
   developSidebar: [

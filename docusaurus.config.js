@@ -6,18 +6,18 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'Odin Protocol Documentation',
+  tagline: 'Odin Protocol is a data-centric, interoperable ecosystem that utilizes a layer-1 blockchain, an inbuilt oracle, and a rewards-based system for users.',
+  url: 'https://odinprotocol.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'ODIN-PROTOCOL', // Usually your GitHub org/user name.
+  projectName: 'odin-docs', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -36,15 +36,9 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
+          routeBasePath: '/',
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/ODIN-PROTOCOL/odin-docs/blob/master',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -79,13 +73,6 @@ const config = {
             label: 'Getting Started',
           },
           {
-            type: 'doc',
-            docId: 'develop/intro',
-            position: 'left',
-            label: 'Develop',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
             href: 'https://github.com/ODIN-PROTOCOL',
             label: 'GitHub',
             position: 'right',
@@ -100,11 +87,7 @@ const config = {
             items: [
               {
                 label: 'Getting Started',
-                to: '/docs/overview/intro',
-              },
-              {
-                label: 'Develop',
-                to: '/docs/develop/intro',
+                to: '/',
               }
             ],
           },
@@ -112,16 +95,12 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.gg/odinprotocol',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/odinprotocol',
               },
             ],
           },
@@ -129,17 +108,13 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/ODIN-PROTOCOL',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Odin Protocol.`,
       },
       prism: {
         theme: lightCodeTheme,
