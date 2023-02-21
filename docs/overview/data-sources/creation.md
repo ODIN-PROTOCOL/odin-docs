@@ -91,7 +91,7 @@ if __name__ == "__main__":
         sys.exit(1)
 ```
 
-* ### Define variables
+* ### Defining variables
 
 In the code, the initial step is to define the `URL` of a public node for sending requests, as well as our symbol map for specifying the permissible list of symbols for the request. It's worth noting that the LCD node returns the price of the token relative to the base asset.
 
