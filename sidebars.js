@@ -23,7 +23,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Data Sources',
-      items: ['overview/data-sources/intro'],
+      items: ['overview/data-sources/intro','overview/data-sources/creation'],
     },
     {
       type: 'category',
